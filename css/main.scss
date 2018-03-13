@@ -1,0 +1,111 @@
+html {
+    body {
+        $width: 1024px;
+
+        .search .input {
+            width: 100%;
+        }
+
+        header {
+            #top_banner {
+                position: relative;
+
+                $color1: #93d394;
+                $color2: #69523b;
+                $height: 110px;
+
+                text-align: center;
+                background: linear-gradient(to right, $color1 50%, $color2 50%);
+                height: $height;
+
+                img {
+                    width: $width;
+                    height: $height;
+                    margin: 0 auto;
+                }
+
+                #banner_btn {
+                    position: absolute;
+                    bottom: 0;
+                    right: calc(50% - #{$width / 2});
+                    width: 27px;
+                    height: 27px;
+                    line-height: 24px;
+                    background: $color2;
+                    cursor: pointer;
+                    color: #ffd400;
+                    font-size: 23px;
+                }
+            }
+
+            #main_header {
+                background: #ffd400;
+
+                #top_nav {
+                    width: $width - 20px;
+                    margin: 10px auto;
+                    position: relative;
+                    height: 500px;
+                    z-index: 0;
+
+                    #main_banner_con {
+                        width: 100%;
+                        position: absolute;
+                        top: 100px;
+                        right: 0;
+
+                        #main_ban_notice {
+                            width: 100%;
+                            height: 300px;
+                            h3 {
+                                margin-top: 0;
+                                &.sub {
+                                    margin-top: 5px;
+                                    margin-left: 5px;
+                                    a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                        #main_ban_img{
+                            position: absolute;
+                            top: -100px;
+                            right: 0;
+                            z-index: -99;
+
+                        }
+                    }
+                }
+            }
+
+            #gnb {
+                width: $width;
+                margin: 100px auto;
+                text-align:center;
+                h2 {
+                    margin-left: 30px;
+                    text-align: left;
+                }
+                .menu {
+                    width: auto;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        section {
+            article {}
+        }
+
+        footer {
+            #bottom_nav {}
+
+            #notice {}
+
+            #company_info {}
+
+            #bottom_banner {}
+        }
+    }
+}

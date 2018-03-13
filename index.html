@@ -1,14 +1,131 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
     <title>회사 공식사이트 샘플</title>
 </head>
+
 <body>
-    
+    <header>
+        <div id="top_banner">
+            <a href="">
+                <img src="http://via.placeholder.com/1024x110" title="이벤트 배너" alt>
+            </a>
+            <div id="banner_btn">X</div>
+        </div>
+        <div id="main_header">
+            <nav id="top_nav">
+                <div class="ui grid">
+                    <div class="four column row">
+                        <div class="left floated column" id="top_logo">
+                            <a href="">
+                                <img src="http://via.placeholder.com/150x30" title="회사 로고" alt>
+                            </a>
+                        </div>
+                        <div class="floated column right aligned">
+                            <button class="basic ui button">
+                                Login
+                            </button>
+                            <button class="basic primary ui button">
+                                Join us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_banner_con" class="ui grid">
+                    <div id="main_ban_notice" class="left six wide floated column">
+                        <h1 class="ui header">샘플회사에
+                            <br> 오신것을 환영합니다</h1>
+                        <h3 class="ui header">간단하면서도 실용적인 기술을 만나 보세요.</h3>
+                        <div class="ui search">
+                            <div class="ui icon input">
+                                <input class="prompt" type="text" placeholder="">
+                                <i class="search icon"></i>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <h3 class="ui sub header">
+                            <a id="modal_btn" href="">간단하게 사용하기</a>
+                        </h3>
+                    </div>
+                    <div id="main_ban_img" class="right eight wide floated colmun">
+                        <img src="http://via.placeholder.com/584x604" alt="">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <nav id="gnb">
+            <h2>Category</h2>
+            <div class="ui compact labeled icon menu">
+                <a class="item">
+                    <i class="gamepad icon"></i>
+                    Games
+                </a>
+                <a class="item">
+                    <i class="video camera icon"></i>
+                    Channels
+                </a>
+                <a class="item">
+                    <i class="video play icon"></i>
+                    Videos
+                </a>
+                <a class="item">
+                    <i class="gamepad icon"></i>
+                    Games
+                </a>
+                <a class="item">
+                    <i class="video camera icon"></i>
+                    Channels
+                </a>
+                <a class="item">
+                    <i class="video play icon"></i>
+                    Videos
+                </a>
+                <a class="item">
+                    <i class="gamepad icon"></i>
+                    Games
+                </a>
+                <a class="item">
+                    <i class="video camera icon"></i>
+                    Channels
+                </a>
+                <a class="item">
+                    <i class="video play icon"></i>
+                    Videos
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <footer>
+        <nav id="bottom_nav"></nav>
+        <div id="notice"></div>
+        <div id="company_info"></div>
+        <div id="bottom_banner"></div>
+    </footer>
+
+    <div class="ui mini modal">
+            <div class="ui icon header">
+              <i class="archive icon"></i>
+              Archive Old Messages
+            </div>
+            <div class="content">
+              <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+            </div>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
