@@ -5,7 +5,7 @@ html body .search .input {
 html body header #top_banner {
   position: relative;
   text-align: center;
-  background: linear-gradient(to right, #93d394 50%, #69523b 50%);
+  background: linear-gradient(to right, #00B269 50%, #FF3E19 50%);
   height: 110px;
 }
 
@@ -22,14 +22,14 @@ html body header #top_banner #banner_btn {
   width: 27px;
   height: 27px;
   line-height: 24px;
-  background: #69523b;
+  background: #7f1400;
   cursor: pointer;
-  color: #ffd400;
+  color: #187EFF;
   font-size: 23px;
 }
 
 html body header #main_header {
-  background: #ffd400;
+  background: #187EFF;
 }
 
 html body header #main_header #top_nav {
@@ -79,11 +79,179 @@ html body header #gnb {
 }
 
 html body header #gnb h2 {
-  margin-left: 30px;
   text-align: left;
 }
 
 html body header #gnb .menu {
   width: auto;
+  margin: 0 auto;
+}
+
+html body section article {
+  width: 1024px;
+  margin: 100px auto;
+}
+
+html body section article.full-width {
+  width: 100%;
+  background-color: lightgray;
+}
+
+html body section article.full-width .grid {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+html body section article.full-width .grid .five {
+  margin: 50px auto;
+}
+
+html body section article#carousel_ban {
+  width: 1024px;
+  overflow: hidden;
+  position: relative;
+}
+
+html body section article#carousel_ban .ui-carousel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+html body section article#carousel_ban .ui-carousel-item {
+  width: calc(1022px);
+  margin: 0 1px;
+  padding: 0 0 0 0;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #d4d4d5;
+}
+
+html body section article#carousel_ban .ui-carousel-item .middle {
+  text-align: center;
+}
+
+html body section article#carousel_ban .caro_btn {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  line-height: 50px;
+  cursor: pointer;
+  color: #187EFF;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+}
+
+html body section article#carousel_ban .ui-carousel-prev {
+  bottom: 110px;
+  left: 2px;
+}
+
+html body section article#carousel_ban .ui-carousel-next {
+  bottom: 110px;
+  right: 2px;
+}
+
+html body section article#ranking .segment {
+  position: relative;
+}
+
+html body section article#ranking .segment span {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  text-align: center;
+}
+
+html body section article#ranking .statistic {
+  margin: 0 20px;
+}
+
+html body footer #bottom_nav {
+  width: 100%;
+  background-color: lightgray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+html body footer #bottom_nav ul {
+  width: 1024px;
+  margin: 5px auto;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+html body footer #bottom_nav ul li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: 0;
+  display: inline-block;
+}
+
+html body footer #bottom_nav ul li a {
+  color: black;
+}
+
+html body footer #bottom_nav ul li:not(:last-of-type):after {
+  text-align: center;
+  content: '|';
+  margin: 0 10px;
+}
+
+html body footer #notice {
+  width: 1024px;
+  margin: 20px auto;
+}
+
+html body footer #notice .list {
+  margin-left: 10px;
+}
+
+html body footer #notice h5 {
+  margin-top: 0;
+}
+
+html body footer #company_info {
+  width: 1024px;
+  margin: 50px auto;
+}
+
+html body footer #company_info .bulleted {
+  width: 100%;
+}
+
+html body #sticky_wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px double black;
+  z-index: 99;
+  display: none;
+}
+
+html body #sticky_wrap .menu {
+  margin-top: 0;
+}
+
+html body #sticky_wrap #sticky_nav1 {
+  background-color: #187EFF;
+  display: none;
+}
+
+html body #sticky_wrap #sticky_nav2 {
+  background-color: white;
+  display: none;
+}
+
+html body #sticky_wrap #sticky_nav1 nav, html body #sticky_wrap #sticky_nav2 nav {
+  width: 1024px;
   margin: 0 auto;
 }

@@ -1,29 +1,24 @@
 html {
     body {
         $width: 1024px;
-
+        $main-color: #187EFF;
         .search .input {
             width: 100%;
         }
-
         header {
             #top_banner {
                 position: relative;
-
-                $color1: #93d394;
-                $color2: #69523b;
+                $color1: #00B269;
+                $color2: #FF3E19;
                 $height: 110px;
-
                 text-align: center;
                 background: linear-gradient(to right, $color1 50%, $color2 50%);
                 height: $height;
-
                 img {
                     width: $width;
                     height: $height;
                     margin: 0 auto;
                 }
-
                 #banner_btn {
                     position: absolute;
                     bottom: 0;
@@ -31,29 +26,25 @@ html {
                     width: 27px;
                     height: 27px;
                     line-height: 24px;
-                    background: $color2;
+                    background: darken( $color2, 30% );
                     cursor: pointer;
-                    color: #ffd400;
+                    color: $main-color;
                     font-size: 23px;
                 }
             }
-
             #main_header {
-                background: #ffd400;
-
+                background: $main-color;
                 #top_nav {
                     width: $width - 20px;
                     margin: 10px auto;
                     position: relative;
                     height: 500px;
                     z-index: 0;
-
                     #main_banner_con {
                         width: 100%;
                         position: absolute;
                         top: 100px;
                         right: 0;
-
                         #main_ban_notice {
                             width: 100%;
                             height: 300px;
@@ -68,23 +59,20 @@ html {
                                 }
                             }
                         }
-                        #main_ban_img{
+                        #main_ban_img {
                             position: absolute;
                             top: -100px;
                             right: 0;
                             z-index: -99;
-
                         }
                     }
                 }
             }
-
             #gnb {
                 width: $width;
                 margin: 100px auto;
-                text-align:center;
+                text-align: center;
                 h2 {
-                    margin-left: 30px;
                     text-align: left;
                 }
                 .menu {
@@ -93,19 +81,153 @@ html {
                 }
             }
         }
-
         section {
-            article {}
+            article {
+                width: $width;
+                margin: 100px auto;
+                &.full-width {
+                    width: 100%;
+                    background-color: lightgray;
+                    .grid {
+                        width: $width;
+                        margin: 0 auto;
+                        .five {
+                            margin: 50px auto;
+                        }
+                    }
+                }
+                &#carousel_ban {
+                    width: $width;
+                    overflow: hidden;
+                    position: relative;
+                    .ui-carousel-list {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                    }
+                    .ui-carousel-item {
+                        width: calc(#{$width - 2});
+                        margin: 0 1px;
+                        padding: 0 0 0 0;
+                        float: left;
+                        border-radius: 5px;
+                        border: 1px solid #d4d4d5;
+                        .middle {
+                            text-align: center;
+                        }
+                    }
+                    .caro_btn {
+                        position: absolute;
+                        width: 30px;
+                        height: 60px;
+                        line-height: 50px;
+                        cursor: pointer;
+                        color: $main-color;
+                        font-size: 30px;
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: white;
+                    }
+                    .ui-carousel-prev {
+                        bottom: 110px;
+                        left: 2px;
+                    }
+                    .ui-carousel-next {
+                        bottom: 110px;
+                        right: 2px;
+                    }
+                }
+                &#ranking {
+                    .segment {
+                        position: relative;
+                        span {
+                            width: 20px;
+                            height: 20px;
+                            background-color: red;
+                            color: white;
+                            position: absolute;
+                            top: 10px;
+                            left: 17px;
+                            text-align: center;
+                        }
+                    }
+                    .statistic {
+                        margin: 0 20px;
+                    }
+                }
+            }
         }
-
         footer {
-            #bottom_nav {}
-
-            #notice {}
-
-            #company_info {}
-
-            #bottom_banner {}
+            #bottom_nav {
+                width: 100%;
+                background-color: lightgray;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                ul {
+                    width: $width;
+                    margin: 5px auto;
+                    list-style: none;
+                    text-align: center;
+                    padding: 0;
+                    li {
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
+                        border: 0;
+                        display: inline-block;
+                        a {
+                            color: black;
+                        }
+                        &:not(:last-of-type):after {
+                            text-align: center;
+                            content:'|';
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+            #notice {
+                width: $width;
+                margin: 20px auto;
+                .list {
+                    margin-left: 10px;
+                }
+                h5 {
+                    margin-top: 0;
+                }
+            }
+            #company_info {
+                width: $width;
+                margin: 50px auto;
+                .bulleted {
+                    width: 100%;
+                }
+            }
+        }
+        #sticky_wrap {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-bottom: 5px double black;
+            z-index: 99;
+            display: none;
+            .menu {
+                margin-top: 0;
+            }
+            #sticky_nav1 {
+                background-color: $main-color;
+                display: none;
+            }
+            #sticky_nav2 {
+                background-color: white;
+                display: none;
+            }
+            #sticky_nav1,#sticky_nav2 {
+                nav {
+                    width: $width;
+                    margin: 0 auto;
+                }                
+            }
         }
     }
 }
