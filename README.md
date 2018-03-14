@@ -8,10 +8,11 @@
 
 ## Tech
 
-이 사이트는 반응형 웹 디자인 기술이 적용되었습니다.
+이 사이트는 PC전용 입니다.
 이하 사용된 기술 목록입니다.
 
-- HTML
+- HTML5
 - CSS (included CSS3 & SASS)
 - Javascript (included Jquery)
 - Semantic UI 2.3.0
+- 시맨틱 마크업, 웹 접근성, 웹 표준
