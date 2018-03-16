@@ -16,3 +16,7 @@
 - Javascript (included Jquery)
 - Semantic UI 2.3.0
 - 시맨틱 마크업, 웹 접근성, 웹 표준
+
+## Screenshot
+
+![스크린샷](https://github.com/danhk0612/Company-Sample-2/raw/master/img/sample1.png) 
