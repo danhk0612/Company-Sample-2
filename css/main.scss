@@ -1,9 +1,15 @@
 html {
+    .white {
+        color: white !important;
+    }
     body {
         $width: 1024px;
-        $main-color: #187EFF;
+        $main-color: #24292e;
         .search .input {
             width: 100%;
+        }
+        #searchBox {
+            background-color: white !important;
         }
         header {
             #top_banner {
@@ -40,6 +46,8 @@ html {
                     position: relative;
                     height: 500px;
                     z-index: 0;
+
+                    
                     #main_banner_con {
                         width: 100%;
                         position: absolute;

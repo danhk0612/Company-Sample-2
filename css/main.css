@@ -1,5 +1,13 @@
+html .white {
+  color: white !important;
+}
+
 html body .search .input {
   width: 100%;
+}
+
+html body #searchBox {
+  background-color: white !important;
 }
 
 html body header #top_banner {
@@ -24,12 +32,12 @@ html body header #top_banner #banner_btn {
   line-height: 24px;
   background: #7f1400;
   cursor: pointer;
-  color: #187EFF;
+  color: #24292e;
   font-size: 23px;
 }
 
 html body header #main_header {
-  background: #187EFF;
+  background: #24292e;
 }
 
 html body header #main_header #top_nav {
@@ -138,7 +146,7 @@ html body section article#carousel_ban .caro_btn {
   height: 60px;
   line-height: 50px;
   cursor: pointer;
-  color: #187EFF;
+  color: #24292e;
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -242,7 +250,7 @@ html body #sticky_wrap .menu {
 }
 
 html body #sticky_wrap #sticky_nav1 {
-  background-color: #187EFF;
+  background-color: #24292e;
   display: none;
 }
 
