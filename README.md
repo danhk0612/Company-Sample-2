@@ -20,3 +20,12 @@
 ## Screenshot
 
 ![스크린샷](https://github.com/danhk0612/Company-Sample-2/raw/master/img/sample1.jpg) 
+
+## 주요 내용
+
+### https://danhk0612.github.io/Company-Sample-2/
+
+- 메인 페이지
+- 스틱키 2단 메뉴바 (메인의 카테고리 박스가 스크롤로 인해 보이지 않을 경우 카테고리를 메뉴바에 표시)
+- 캐러셀 배너
+- SCSS를 활용해서 중복된 작업 최소화 및 유지보수 용이
